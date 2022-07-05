@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F17971F708D45DCBDF04257E /* Pods_Flickr_Client_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8EF000727F608C653E14E9D /* Pods_Flickr_Client_App.framework */; };
+		FE952E7A28744764005172EB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE952E7928744764005172EB /* NetworkManager.swift */; };
 		FE99256E2870341A00DCC5C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE99256D2870341A00DCC5C6 /* AppDelegate.swift */; };
 		FE9925702870341A00DCC5C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE99256F2870341A00DCC5C6 /* SceneDelegate.swift */; };
 		FE9925722870341A00DCC5C6 /* RecentPhotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9925712870341A00DCC5C6 /* RecentPhotosTableViewController.swift */; };
@@ -25,6 +26,7 @@
 		A3EB2EFC3F35801CCDDDFAFA /* Pods-Flickr Client App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flickr Client App.release.xcconfig"; path = "Target Support Files/Pods-Flickr Client App/Pods-Flickr Client App.release.xcconfig"; sourceTree = "<group>"; };
 		C8EF000727F608C653E14E9D /* Pods_Flickr_Client_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flickr_Client_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE308924FB788CC290DB867B /* Pods-Flickr Client App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flickr Client App.debug.xcconfig"; path = "Target Support Files/Pods-Flickr Client App/Pods-Flickr Client App.debug.xcconfig"; sourceTree = "<group>"; };
+		FE952E7928744764005172EB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		FE99256A2870341A00DCC5C6 /* Flickr Client App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flickr Client App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE99256D2870341A00DCC5C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE99256F2870341A00DCC5C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +60,6 @@
 				CE308924FB788CC290DB867B /* Pods-Flickr Client App.debug.xcconfig */,
 				A3EB2EFC3F35801CCDDDFAFA /* Pods-Flickr Client App.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -68,6 +69,23 @@
 				C8EF000727F608C653E14E9D /* Pods_Flickr_Client_App.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE952E77287446D0005172EB /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				FE99256D2870341A00DCC5C6 /* AppDelegate.swift */,
+				FE99256F2870341A00DCC5C6 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		FE952E7828744746005172EB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FE952E7928744764005172EB /* NetworkManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		FE9925612870341A00DCC5C6 = {
@@ -101,8 +119,8 @@
 		FE9925812870343F00DCC5C6 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				FE99256D2870341A00DCC5C6 /* AppDelegate.swift */,
-				FE99256F2870341A00DCC5C6 /* SceneDelegate.swift */,
+				FE952E7828744746005172EB /* Networking */,
+				FE952E77287446D0005172EB /* Delegates */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -302,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE952E7A28744764005172EB /* NetworkManager.swift in Sources */,
 				FE99259528707D0F00DCC5C6 /* Photo.swift in Sources */,
 				FE992587287043EC00DCC5C6 /* PhotoTableViewCell.swift in Sources */,
 				FE9925722870341A00DCC5C6 /* RecentPhotosTableViewController.swift in Sources */,
