@@ -10,6 +10,8 @@ import UIKit
 class PhotoDetailViewController: UIViewController {
     
     var photo:Photo?
+    
+    var deneme = "afdsafdas"
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var ownerImageView: UIImageView!
